@@ -7,7 +7,7 @@
 EXEC database.GenerateUIDv2 @LastName ='HAWKE', @FirstName = 'Bob', @DateOfBirth = '1929-05-16', @Sex = 1;
 
 -- The following is the SQL code to create the stored procedure `GenerateUIDv2`:
-CREATE PROCEDURE database.GenerateUIDv2 @LastName VARCHAR(64), @FirstName VARCHAR (64), @DateOfBirth DATE, @Sex CHAR(1)
+CREATE PROCEDURE database.GenerateUIDv2 @LastName VARCHAR(64), @FirstName VARCHAR (64), @DateOfBirth VARCHAR(10), @Sex CHAR(1)
 AS
     -- Process LastName
     DECLARE @Char1 CHAR (1) = '2';
